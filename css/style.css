@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     outline: none !important;
+    scroll-behavior: smooth;
 }
 body{
     font-family: sans-serif;
@@ -39,16 +40,19 @@ p{
     font-size: 2rem;
     font-weight: 400;
 }
-.banner{
+ .banner{
     position: relative;
     top: 0;
     width: 100%;
     height: 100vh;
-    background-image: url("../img/bannerImg1.jpg");
+    background-image: url("../img/bannerImg2.jpg");
     background-position: center;
     background-size: cover;
+} 
+ #home{
+    margin-bottom: 0px;
 }
-.banner:before{
+.sec2:before,.contact:before{
     content: '';
     position: absolute;
     top: 0;
@@ -58,7 +62,7 @@ p{
     background: linear-gradient(#000,transparent);
     pointer-events: none;
 }
-.banner:after{
+.banner:after,.sec2:after,.contact:after{
     content: '';
     position: absolute;
     bottom: 0;
@@ -67,7 +71,209 @@ p{
     height: 400px;
     background: linear-gradient(360deg,#000,transparent);
     pointer-events: none;
+} 
+.height100{
+    height: 100%;
 }
+.height100p{
+    height: 100vh;
+}
+.contentBox{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.contentBox h1{
+    font-weight: 400;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 3rem;
+}
+.contentBox p{
+    color: #fff;
+    font-size: 1.2rem;
+}
+.sec1{
+    padding: 100px 0;
+    background: #000;
+}
+.headerText{
+    color: #fff;
+}
+.headerText h2{
+    font-size: 2.5rem;
+    font-weight: 400;
+    margin-bottom: 20px;
+} 
+ .each{
+    position: relative;
+    max-width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+.each .imgBox{
+    width: 100%;
+    height: 100%;
+}
+.each .imgBox img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+.each .content {
+    width: 100px;
+    height: 50px;
+    color: #fff;
+}
+.placeBox{
+    position: relative;
+    max-width: 300px;
+    height: 400px;
+    margin: 0 auto;
+    background: #000;
+    margin-top: 30px;
+
+}
+.placeBox .imgBx{
+    width: 100%;
+    height: 100%;
+}
+.placeBox .imgBx img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+.placeBox .content{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: baseline;
+    align-items: flex-end;
+
+
+}
+.placeBox .content span{
+    position: relative;
+    margin: 0;
+    padding: 10px;
+    background: rgba(0,0,0,0.95);
+    color: #fff;
+    font-size: 20px;
+    font-weight: 400;
+    width: 100%;
+}
+.sec2{
+    position: relative;
+    background: url("../img/bannerImg3.jpg");
+    background-size: cover;
+    height: 100vh;
+    
+}
+.marginTop{
+    margin-top: 80px;
+}
+.author{
+    background: #000;
+    position: relative;
+    height: 500px;
+    
+    
+}
+.author .authorImg{
+    width: 200px;
+    height: 300px;
+    margin: 0 auto;
+}
+.author .authorContent{
+    padding: 20px;
+}
+.author .authorContent p{
+    margin-top: 30px; 
+}
+.contact form{
+    position: relative;
+     z-index: 1000; 
+}
+.contact {
+    position: relative;
+    background: #000;
+    background-image: url("../img/contactUs1.jpg");
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: cover; 
+    min-height: 100vh;
+}
+.contact .form-control{
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid #000;
+    height: 50px;
+    background: rgba(0,0,0,0.6);
+    color: #fff;
+    font-size: 1.25rem;
+}
+.contact .form-control:focus,
+.contact .form-control:hover{
+    border: none;
+    border-bottom: 2px solid rgba(255,255,255,1);
+    box-shadow: none;
+    background: transparent;
+}
+.contact textarea{
+    min-height: 100px;
+}
+.contact label{
+    color: #fff;
+    font-size: 1.3rem;
+}
+.contact .btn{
+    border-radius: 10px;
+    width: 80px;
+    padding: 5px;
+}
+
+footer{
+    background: #000;
+    padding: 50px 0 0;
+}
+
+.socialNetworks{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.socialNetworks li{
+    list-style: none;
+    margin: 0 20px;
+}
+.socialNetworks li a{
+    color: #777;
+    font-size: 2.5rem;
+    transition: .5s;
+}
+.socialNetworks li a:hover{
+    color: #fff;
+}
+.copyRight{
+    color:#777;
+    width: 200px;
+    height: 30px;
+    margin: 0 auto;
+    margin-top: 20px;
+    
+}
+
+
+
+
 
 
 
